@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #c1 {
+      stroke-dashoffset: 0;
+      transition: 2s linear;
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" 
+  width="400" height="400">
+    <circle id="c1" cx="40" cy="40" r="20" fill="#fac" stroke="#0fb"/>
+  </svg>
+</body>
+<script>
+  const circle = document.querySelector('circle')
+  const totalLength = circle.getTotalLength()
+
+  circle.style.strokeDasharray = totalLength
+  circle.style.strokeDashoffset = totalLength
+
+  circle.ontransitionend = function(){
+    circle.style.strokeDashoffset = circle.style.strokeDashoffset * 1 + totalLength * 1
+  }
+</script>
+</html>
