@@ -1,0 +1,49 @@
+/* svg {
+  width: 500px;
+  height: 500px;
+} */
+
+.y-text {
+  font-size: 6px;
+  fill: #ccc;
+  text-anchor: end;
+}
+
+.x-line {
+  stroke: #ccc;
+  stroke-width: 0.5px;
+  fill: none;
+}
+
+.x-text {
+  font-size: 6px;
+  fill: #ccc;
+  text-anchor: middle;
+}
+
+.data-circle circle {
+  r: 1px;
+  fill: #fff;
+  stroke: #5A6FC0;
+  stroke-width: 1px;
+}
+.data-circle circle:hover {
+  r: 2px;
+}
+.data-line {
+  cursor: pointer;
+  stroke: #5A6FC0;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.data-panel {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}

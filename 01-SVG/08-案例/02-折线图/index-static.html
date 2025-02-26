@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <svg id="svg">
+    <!-- 左侧数值 -->
+    <g class="y-text">
+      <text x="20" y="225">0</text>
+      <text x="20" y="185">40</text>
+      <text x="20" y="145">80</text>
+      <text x="20" y="105">120</text>
+      <text x="20" y="65">160</text>
+      <text x="20" y="25">200</text>
+    </g>
+
+    <!-- 底部线段，7个间隙(200 / 7 = 28.5)，8个线段 -->
+    <g class="x-line">
+      <path
+          d="M25 225V229 M53.5 225V229 M82 225V229 M110.5 225V229
+            M139 225V229 M167.5 225V229 M196 225V229 M225 225V229"
+        />
+    </g>
+
+    <!-- x轴底部文字 -->
+    <g class="x-text">
+      <text x="39" y="235">周一</text>
+      <text x="67.5" y="235">周二</text>
+      <text x="96" y="235">周三</text>
+      <text x="124.5" y="235">周四</text>
+      <text x="153" y="235">周五</text>
+      <text x="181.5" y="235">周六</text>
+      <text x="210" y="235">周日</text>
+    </g>
+
+    <!-- 线段-->
+    <polyline class="data-line" points="39 125,67.5 25,96 175,124.5 200,153 150,181.5 140,210 80"/>
+
+    <!-- 线段上的圆点 -->
+    <g class="data-circle">
+      <circle cx="39" cy="125" />
+      <circle cx="67.5" cy="25"  />
+      <circle cx="96" cy="175"  />
+      <circle cx="124.5" cy="200"  />
+      <circle cx="153" cy="150"  />
+      <circle cx="181.5" cy="140"  />
+      <circle cx="210" cy="80"  />
+    </g>
+
+  </svg>
+
+  <script src="../01-坐标系/02-动态坐标系/index.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

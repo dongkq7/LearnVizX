@@ -41,9 +41,14 @@ function draw(args) {
   let d = ''
   for(let i = 0; i < 11; i++) {
     // 横线
-    d += `M25 ${padding + i * lineGap} H225`
+    if (config.xAxis) {
+      d += `M25 ${padding + i * lineGap} H225`
+    }
+    
     // 竖线
-    d += `M${padding + i * lineGap} 25 V225`
+    if (config.yAxis) {
+      d += `M${padding + i * lineGap} 25 V225`
+    }
   }
   path.setAttribute('d', d)
   g.appendChild(path)
