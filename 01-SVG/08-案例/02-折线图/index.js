@@ -78,7 +78,7 @@ data.forEach((item, index) => {
 })
 
 // 缩放比例
-const radio = 200 / upLimit
+const ratio = 200 / upLimit
 // 数据折线
 g = document.createElementNS(NS, 'g')
 g.classList.add('data-line')
@@ -87,7 +87,7 @@ const polyline = document.createElementNS(NS, 'polyline')
 
 let points = ''
 data.forEach((item, index) => {
-  points += `${xStart + xSpace * index + xSpace / 2} ${yStart - item.value * radio} `
+  points += `${xStart + xSpace * index + xSpace / 2} ${yStart - item.value * ratio} `
 })
 polyline.setAttribute('points', points)
 g.appendChild(polyline)
@@ -101,7 +101,7 @@ svg.appendChild(g)
 data.forEach((item, index) => {
   const circle = document.createElementNS(NS, 'circle')
   circle.setAttribute('cx', xStart + xSpace * index + xSpace / 2)
-  circle.setAttribute('cy', yStart - item.value * radio)
+  circle.setAttribute('cy', yStart - item.value * ratio)
   circle.setAttribute('value', item.value)
   g.appendChild(circle)
 })

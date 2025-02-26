@@ -1,0 +1,15 @@
+.bar:hover {
+  cursor: pointer;
+  fill: #ADDE8B;
+}
+
+.data-panel{
+  padding:5px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  display:none;
+  left:0;
+  top:0;
+}
