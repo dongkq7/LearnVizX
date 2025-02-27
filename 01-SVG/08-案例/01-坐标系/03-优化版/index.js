@@ -65,7 +65,7 @@ function draw(args) {
     svg.appendChild(g)
   }
 
-  const xSpace = 200 / config.xText.length
+  const xSpace = config.xText?.length ? 200 / config.xText.length : 0
   result.xSpace = xSpace
 
   if (config.xText?.length) {
