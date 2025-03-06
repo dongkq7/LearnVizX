@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="radialGradient1">
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </radialGradient>
+    </defs>
+    <circle cx="30" cy="30" r="20" fill="url(#radialGradient1)"></circle>
+    <rect x="50" y="50" width="30" height="30" fill="url(#radialGradient1)"></rect>
+  </svg>
+
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="radialGradient2" cx="50%" cy="50%" fr="20%" r="50%">
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </radialGradient>
+    </defs>
+    <circle cx="30" cy="30" r="20" fill="url(#radialGradient2)"></circle>
+  </svg>>
+
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="radialGradient3" cx="50%" cy="50%" fr="20%" r="50%" fx="25%" fy="50%">
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </radialGradient>
+    </defs>
+    <circle cx="30" cy="30" r="20" fill="url(#radialGradient3)"></circle>
+  </svg>>
+  <script src="./index.js"></script>
+</body>
+</html>

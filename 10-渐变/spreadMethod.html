@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- pad -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient id="gradient1" x1="30%" y1="0" x1="70%" y="0">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <rect x="20" y="20" width="60" height="40" fill="url(#gradient1)"/>
+    <rect x="38" y="20" width="24" height="40" fill="none" stroke="#66f" stroke-width=".5"/>
+  </svg>
+
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="gradient2" fr="20%" r="30%">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </radialGradient>
+    </defs>
+    <circle cx="50" cy="50" r="40" fill="url(#gradient2)"></circle>
+    <!-- r=40 直径=80, fr为20% 也就是从半径为16的圆向外开始渐变-->
+    <circle cx="50" cy="50" r="16" fill="none" stroke="#66f" stroke-width=".5"></circle>
+    <!-- 渐变到半径为24的圆的位置结束 -->
+    <circle cx="50" cy="50" r="24" fill="none" stroke="#66f" stroke-width=".5"></circle>
+  </svg>
+
+  <!-- repeat -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient id="gradient3" x1="30%" y1="0" x1="40%" y="0" spreadMethod="repeat">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <rect x="20" y="20" width="60" height="40" fill="url(#gradient3)"/>
+  </svg>
+
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="gradient4" fr="20%" r="30%" spreadMethod="repeat">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </radialGradient>
+    </defs>
+    <circle cx="50" cy="50" r="40" fill="url(#gradient4)"></circle>
+    <!-- r=40 直径=80, fr为20% 也就是从半径为16的圆向外开始渐变-->
+    <circle cx="50" cy="50" r="16" fill="none" stroke="#66f" stroke-width=".5"></circle>
+    <!-- 渐变到半径为24的圆的位置结束 -->
+    <circle cx="50" cy="50" r="24" fill="none" stroke="#66f" stroke-width=".5"></circle>
+  </svg>
+
+  <!-- reflect -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient id="gradient5" x1="20%" y1="0" x1="30%" y="0" spreadMethod="reflect">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <rect x="20" y="20" width="60" height="40" fill="url(#gradient5)"/>
+  </svg>
+
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="gradient6" fr="20%" r="30%" spreadMethod="reflect">
+        <stop offset="0%" stop-color="#ff0" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#f00" stop-opacity="1"/>
+      </radialGradient>
+    </defs>
+    <circle cx="50" cy="50" r="40" fill="url(#gradient6)"></circle>
+    <!-- r=40 直径=80, fr为20% 也就是从半径为16的圆向外开始渐变-->
+    <circle cx="50" cy="50" r="16" fill="none" stroke="#66f" stroke-width=".5"></circle>
+    <!-- 渐变到半径为24的圆的位置结束 -->
+    <circle cx="50" cy="50" r="24" fill="none" stroke="#66f" stroke-width=".5"></circle>
+  </svg>
+
+  <script src="./index.js"></script>
+</body>
+</html>

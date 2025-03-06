@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 从左到右的渐变 -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient
+        id="linearGradient1"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
+      >
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="80" height="40" fill="url(#linearGradient1)"></rect>
+  </svg>
+  <!-- 从上到下渐变 -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient
+        id="linearGradient2"
+        x1="0%"
+        y1="0%"
+        x2="0%"
+        y2="100%"
+      >
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="80" height="40" fill="url(#linearGradient2)"></rect>
+  </svg>
+  <!-- 从左上到右下的渐变 -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient
+        id="linearGradient3"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="100%"
+      >
+        <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="80" height="40" fill="url(#linearGradient3)"></rect>
+  </svg>
+  <!-- 有中间值的渐变 -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient
+        id="linearGradient4"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
+      >
+        <stop offset="0%" stop-color="rgb(255,0,0)" />
+        <stop offset="60%" stop-color="rgb(0,255,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="80" height="40" fill="url(#linearGradient4)"></rect>
+  </svg>
+  <!-- 有中间值的渐变 -->
+  <svg width="400" height="400" viewBox="0 0 100 100">
+    <defs>
+      <linearGradient
+        id="linearGradient5"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
+      >
+        <stop offset="60%" stop-color="rgb(255,0,0)" />
+        <stop offset="100%" stop-color="rgb(255,255,0)" />
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="80" height="40" fill="url(#linearGradient5)"></rect>
+  </svg>
+  <script src="./index.js"></script>
+</body>
+</html>
